@@ -18,9 +18,12 @@ class MyHashMap:
         return -1
 
     def remove(self, key: int) -> None:
+        remove_index = -1
         for i in range(len(self.arr)):
             if self.arr[i][0] == key:
-                return self.arr.pop(i)
+                remove_index = i
+        if remove_index != -1:
+            self.arr.pop(remove_index)
 
 
 # Your MyHashMap object will be instantiated and called as such:
