@@ -1,6 +1,5 @@
 class Solution:
     def addDigits(self, num: int) -> int:
-        digit=0
         while num>=10:
             add=0
             while num>0:
