@@ -13,4 +13,4 @@ class Solution:
                 high = mid
             else:
                 low = mid + 1
-        return high
+        return low
